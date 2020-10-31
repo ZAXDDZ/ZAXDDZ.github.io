@@ -5,12 +5,13 @@
 @font-face {
  font-family: 'JetBrains Mono';
  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
-}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-10-30T14:46:22.309Z" id="date"> 2020-10-30</time></span><br><span>updated:<time datetime="2020-10-31T14:23:37.530Z" id="updated"> 2020-10-31</time></span></div><h1>Kotori</h1><hr></div><div id="post-content"><!DOCTYPE html>
+}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-10-30T14:46:22.309Z" id="date"> 2020-10-30</time></span><br><span>updated:<time datetime="2020-10-31T14:49:40.318Z" id="updated"> 2020-10-31</time></span></div><h1>Kotori</h1><hr></div><div id="post-content"><!DOCTYPE html>
 
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
   .header{
@@ -67,10 +68,6 @@
   	color: green;
   }
 
-  .container.custom-container-width {
-    max-width: 700px;
-  }
-
   #detail{
   	display: none;
   }
@@ -78,15 +75,16 @@
 </style>
 
 <html>
-<div class="container-fluid custom-container-width">
+<div class="container-fluid">
   <head>
+  	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script>
   		$(document).ready(function() {
     		$("#imgbutton").addClass("animated bounce");
     		$(".well").addClass("animated shake");
     		$("#imgbutton").click(function(){
-      			$("cagbtn").css("color", "pink");
+    			$(".fa fa-heart").css("color", "pink");
       			alert("已按讚");
   			});
   			$("#clsbtn").click(function(){
@@ -154,7 +152,7 @@
 
     </div>
 
-    <div style="position:relative; left: 1270px;"><button class="btn btn-block btn-danger" style="font-size:28px; color:pink; border-radius: 20px; width: 334px; margin: 0px 0px 5px 0px;" id="imgbutton"><i id="cagbtn" class='fas fa-heart' style='color:white'></i>
+    <div style="position:relative; left: 1270px;"><button class="btn btn-block btn-danger" style="font-size:28px; color:pink; border-radius: 20px; width: 334px; margin: 0px 0px 5px 0px;" id="imgbutton"><i class="fa fa-heart" style="color: white"></i>
 		</button></div>
       
     
@@ -196,7 +194,7 @@
 	</div>
 
 	<div style="position:relative; left: 1270px;">
-		<button class="btn btn-block btn-danger" style="font-size:28px; color:pink; border-radius: 20px; width: 334px; margin: 20px 0px 5px 0px;" id="imgbutton"><i id="cagbtn" class='fas fa-heart' style='color:white'></i></button>
+		<button class="btn btn-block btn-danger" style="font-size:28px; color:pink; border-radius: 20px; width: 334px; margin: 20px 0px 5px 0px;" id="imgbutton"><i class="fa fa-heart" style="color: white"></i></button>
 	</div>
 
     <div class="titlee">
@@ -241,16 +239,16 @@
 
     <div class="row contentt">
     <div class="col-xs-3">
-      <button class="btn btn-block btn-danger" style="font-size:28px; color:white;"><i class='fab fa-youtube-square' style="color: white"></i> Youtube</button>
+      <button class="btn btn-block btn-danger" style="font-size:28px; color:white;"><i class="fab fa-youtube-square" style="color: white"></i> Youtube</button>
     </div>
     <div class="col-xs-3">
       <button class="btn btn-block btn-primary" style="font-size:28px; color: white; background-color: purple"><i class='fab fa-twitch' style="color: white"></i> Twitch</button>
     </div>
     <div class="col-xs-3">
-      <button class="btn btn-block btn-primary" style="font-size:28px; color: white; background-color: #00ccff"><i class='fab fa-twitter'></i> Twitter</button>
+      <button class="btn btn-block btn-primary" style="font-size:28px; color: white; background-color: #00ccff"><i class="fab fa-twitter"></i> Twitter</button>
     </div>
     <div class="col-xs-3">
-      <button class="btn btn-block" style="font-size:28px; color: white; background-color: #000d33"><i class='fab fa-steam-symbol style="color: white"'></i> Stream</button>
+      <button class="btn btn-block" style="font-size:28px; color: white; background-color: #000d33"><i class="fab fa-steam-symbol" style="color: white"></i> Stream</button>
     </div>
   </div>
 
