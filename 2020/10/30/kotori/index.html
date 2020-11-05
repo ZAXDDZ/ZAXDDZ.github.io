@@ -5,7 +5,7 @@
 @font-face {
  font-family: 'JetBrains Mono';
  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
-}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-10-30T14:46:22.309Z" id="date"> 2020-10-30</time></span><br><span>updated:<time datetime="2020-11-05T17:19:32.435Z" id="updated"> 2020-11-06</time></span></div><h1>Kotori</h1><hr></div><div id="post-content"><!DOCTYPE html>
+}</style><meta name="generator" content="Hexo 5.2.0"></head><body><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-10-30T14:46:22.309Z" id="date"> 2020-10-30</time></span><br><span>updated:<time datetime="2020-11-05T17:43:10.593Z" id="updated"> 2020-11-06</time></span></div><h1>Kotori</h1><hr></div><div id="post-content"><!DOCTYPE html>
 
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -84,6 +84,7 @@
   		$(document).ready(function() {
     		$("#imgbutton").addClass("animated bounce");
     		$(".well").addClass("animated shake");
+
     		$("#chgbutton1").hide();
     		$("#chgbutton2").hide();
     		$("#imgbutton1").click(function(){
@@ -91,21 +92,45 @@
     			$("#chgbutton1").show();
       			alert("已按讚");
   			});
+  			$("#chgbutton1").click(function(){
+    			$("#chgbutton1").hide();
+    			$("#imgbutton1").show();
+      			alert("已取消");
+  			});
         	$("#imgbutton2").click(function(){
           		$("#imgbutton2").hide();
           		$("#chgbutton2").show();
             	alert("已按讚");
         	});
+        	$("#chgbutton2").click(function(){
+    			$("#chgbutton2").hide();
+    			$("#imgbutton2").show();
+      			alert("已取消");
+  			});
+
   			$("#clsbtn").click(function(){
     			$("#detail").slideUp();
   			});
   			$("#openbtn").click(function(){
     			$("#detail").slideDown();
   			});
-  			$("div").mouseenter(function(){
-  				$("div").css("background-color", "LightGrey");
+
+  			var oldColor = "";
+  			$("p").mouseenter(function(){
+  				oldColor = $(this).css("background-color");
+  				 $(this).css("background-color","black");
   			});
-  				
+  			$("p").mouseleave(function(){
+  				$(this).css("background-color", oldColor);
+  			});
+  			$("li").mouseenter(function(){
+  				oldColor = $(this).css("background-color");
+  				 $(this).css("background-color","black");
+  			});
+  			$("li").mouseleave(function(){
+  				$(this).css("background-color", oldColor);
+  			});
+
   		});
 	</script>
 
@@ -241,12 +266,12 @@
         </div>
     	</div>
         <div style="margin: 0px 0px 5px 0px"><li>其他緞</li></div>
-          <div style="margin: 0px 0px 10px 0px">黃(假想)<br></div>
+          <div style="margin: 0px 0px 10px 0px" id="otherline1">黃(假想)<br></div>
           <div class="img-responsive">
           <a target="_blank" rel="noopener" href="https://truth.bahamut.com.tw/s01/201508/2efd694b7f84a4b04511b4305e7e99cd.JPG"><img src="https://truth.bahamut.com.tw/s01/201508/2efd694b7f84a4b04511b4305e7e99cd.JPG" class="img-rounded" height="331", width="647">
           </a>
       	  </div>
-          <div style="margin: 0px 0px 10px 0px"><br>紅(遊戲)<br></div>
+          <div style="margin: 0px 0px 10px 0px" id="otherline2"><br>紅(遊戲)<br></div>
           <div class="img-responsive">
           <a target="_blank" rel="noopener" href="https://p6-tt.byteimg.com/large/dfic-imagehandler/42591dad-9b06-45aa-a513-348a054ab086?from=pc"><img src="https://p6-tt.byteimg.com/large/dfic-imagehandler/42591dad-9b06-45aa-a513-348a054ab086?from=pc" class="img-rounded">
           </a>
